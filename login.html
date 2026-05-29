@@ -18,3 +18,13 @@ window.login = async () => {
   }
 };
 </script>
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="loginUser()">Login</button>
+
+<script type="module">
+import { loginUser } from "./js/auth.js";
+
+window.loginUser = loginUser;
+</script>
